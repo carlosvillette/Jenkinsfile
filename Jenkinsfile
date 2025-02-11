@@ -3,9 +3,9 @@ pipeline {
     environment {
         AWS_REGION = 'us-east-1'
         SONARQUBE_URL = "https://sonarcloud.io"
-        TRUFFLEHOG_PATH = "/usr/local/bin/trufflehog3"
-        JIRA_SITE = "https://derrickweil.atlassian.net"
-        JIRA_PROJECT = "SCRUM" // Your Jira project key
+        //TRUFFLEHOG_PATH = "/usr/local/bin/trufflehog3"
+        //JIRA_SITE = "https://derrickweil.atlassian.net"
+        //JIRA_PROJECT = "SCRUM" // Your Jira project key
     }
 
     stages {
@@ -116,7 +116,7 @@ pipeline {
         }
     }
 }
-
+/*
 // Function to Create a Jira Ticket
 def createJiraTicket(String issueTitle, String issueDescription) {
     script {
@@ -128,3 +128,4 @@ def createJiraTicket(String issueTitle, String issueDescription) {
                      priority: "High"
     }
 }
+*/
