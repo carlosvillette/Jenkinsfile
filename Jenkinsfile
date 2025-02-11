@@ -42,7 +42,7 @@ pipeline {
                             -Dsonar.login=''' + SONAR_TOKEN, returnStatus: true)
 
                         if (scanStatus != 0) {
-                            createJiraTicket("Static Code Analysis Failed", "SonarQube scan detected issues in your code.")
+                            //createJiraTicket("Static Code Analysis Failed", "SonarQube scan detected issues in your code.")
                             error("SonarQube found security vulnerabilities!")
                         }
                     }
